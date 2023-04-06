@@ -399,7 +399,7 @@ func ServeFeishuBot(cfg *FeishuBotConfig) (err error) {
 				}
 
 				return nil
-			}, 5, 3*time.Second)
+			}, 25, 3*time.Second)
 			if err != nil {
 				logger.Errorf("failed to get answer: %v", err)
 				msgType, content, err := mc.
